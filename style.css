@@ -20,3 +20,81 @@
   --very-dark-blue: hsl(255, 11%, 22%);
   --very-dark-violet: hsl(260, 8%, 14%);
 }
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+.large-button {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+.header-nav-button {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+.footer-nav-button {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: auto;
+  letter-spacing: -0.23px;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -2px;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -1px;
+}
+
+h3 {
+  font-size: 22px;
+  line-height: auto;
+  letter-spacing: 0;
+}
+
+p {
+  font-weight: 500;
+}
+
+.p-hero {
+  font-size: 22px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+.p-section {
+  font-size: 18px;
+  line-height: 32px;
+  letter-spacing: 0.12px;
+}
+
+.p-media {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0;
+}
+
+input::placeholder {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
