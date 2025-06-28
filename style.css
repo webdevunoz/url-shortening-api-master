@@ -13,6 +13,7 @@
 
   /*Secondary Colors*/
   --red: hsl(0, 87%, 67%);
+  --light-cyan: hsl(180, 56%, 75%);
 
   /*Neutral Colors*/
   --gray: hsl(0, 0%, 75%);
@@ -34,9 +35,10 @@ body {
 button {
   font-family: inherit;
   cursor: pointer;
+  border: none;
 }
 
-.large-button {
+.btn--large {
   font-weight: 700;
   font-size: 20px;
   line-height: auto;
@@ -106,13 +108,6 @@ p {
   letter-spacing: 0;
 }
 
-input::placeholder {
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 36px;
-  letter-spacing: 0.15px;
-}
-
 #header-nav {
   display: flex;
   overflow: hidden;
@@ -135,7 +130,7 @@ input::placeholder {
   font-size: 15px;
   line-height: auto;
   letter-spacing: 0;
-  border: none;
+  border-radius: 28px;
 }
 
 .btn--text {
@@ -147,14 +142,13 @@ input::placeholder {
   padding: 9px 23px 8px 24px;
 }
 
-.btn--rounded {
+.btn--filled {
   background-color: var(--cyan);
   color: white;
-  border-radius: 28px;
 }
 
-.btn--rounded:active {
-  opacity: 0.5;
+.btn--filled:active {
+  background-color: var(--light-cyan);
 }
 
 .btn--text:active {
@@ -193,20 +187,67 @@ input::placeholder {
 }
 
 .cta-button {
-  font-size: 20px;
-  font-weight: 700;
-  line-height: auto;
-  letter-spacing: 0;
-  border: none;
   padding: 14px 40px 12px 40px;
+  border-radius: 28px;
 }
 
 #hero-section {
   position: relative;
+  margin-bottom: 138px;
 }
 
 #hero-image {
   position: absolute;
   left: 660px;
   top: -50px;
+  z-index: -1;
+}
+
+#form-box {
+  background-color: var(--dark-violet);
+  background-image: url("/images/bg-shorten-desktop.svg");
+  width: 1110px;
+  height: 168px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+#shorten-link-form {
+  padding: 52px 65px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+#form-input {
+  width: 769px;
+  height: 64px;
+  border-radius: 10px;
+  border: none;
+}
+
+input {
+  font-family: inherit;
+  padding-left: 32px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+}
+
+input:focus {
+  outline: none;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--very-dark-blue);
+  opacity: 0.5;
+}
+
+#form-btn {
+  width: 188px;
+  height: 64px;
+  border-radius: 10px;
 }
