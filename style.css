@@ -23,6 +23,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: hsl(225, 32%, 95%);
 }
 
 #page-wrapper {
@@ -109,9 +110,8 @@ input::placeholder {
 
 #header-nav {
   display: flex;
-  width: 1108px;
   overflow: hidden;
-  margin-top: 48px;
+  padding-top: 48px;
   align-items: center;
 }
 
@@ -163,4 +163,20 @@ input::placeholder {
   gap: 37px;
   margin-left: auto;
   align-items: center;
+}
+
+#hero-background {
+  position: relative;
+  z-index: 0;
+}
+
+#hero-background::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 800px;
+  background: white;
+  z-index: -1;
 }
