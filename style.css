@@ -41,14 +41,21 @@ button {
 .btn--large {
   font-weight: 700;
   font-size: 20px;
-  line-height: auto;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.btn--small {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
   letter-spacing: 0;
 }
 
 .footer-nav-button {
   font-weight: 500;
   font-size: 15px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.23px;
 }
 
@@ -73,13 +80,13 @@ h2 {
 
 h3 {
   font-size: 22px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: 0;
 }
 
 h4 {
   font-size: 16px;
-  line-height: auto;
+  line-height: normal;
   letter-spacing: -0.25px;
 }
 
@@ -126,20 +133,13 @@ p {
 }
 
 .hdr-nav-btn {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: auto;
-  letter-spacing: 0;
   border-radius: 28px;
+  padding: 9px 23px 8px 24px;
 }
 
 .btn--text {
   color: var(--grayish-violet);
   background: none;
-}
-
-.btn--small {
-  padding: 9px 23px 8px 24px;
 }
 
 .btn--filled {
@@ -209,8 +209,6 @@ p {
   width: 1110px;
   height: 168px;
   border-radius: 10px;
-  display: flex;
-  align-items: center;
 }
 
 #shorten-link-form {
@@ -250,4 +248,56 @@ input::placeholder {
   width: 188px;
   height: 64px;
   border-radius: 10px;
+}
+
+#form-input.input-error {
+  /* Red border inside input field */
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  transition: background 0.2s ease;
+  background: linear-gradient(white, white) padding-box,
+    linear-gradient(var(--red), var(--red)) border-box;
+}
+
+.error-message {
+  color: var(--red);
+  font-weight: 500;
+  font-style: italic;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0.11px;
+  margin-top: 8px;
+}
+
+.result-div {
+  background-color: white;
+  display: flex;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.15px;
+  margin-top: 16px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+
+.prev-url-p {
+  color: var(--very-dark-blue);
+  padding-left: 32px;
+  padding-block: 18px;
+}
+
+.new-url-p {
+  color: var(--cyan);
+}
+
+.copy-btn {
+  margin: 16px 24px;
+  padding: 10px 31px 7px 31px;
+  border-radius: 5px;
+}
+
+.link-span {
+  display: flex;
+  align-items: center;
 }

@@ -72,8 +72,15 @@
           </section>
           <section id="shorten-link-section">
             <div id="form-box">
-              <form id="shorten-link-form">
-                <input id="form-input" placeholder="Shorten a link here..." />
+              <form id="shorten-link-form" novalidate>
+                <div id="input-wrapper">
+                  <input
+                    type="url"
+                    id="form-input"
+                    placeholder="Shorten a link here..."
+                    required
+                  />
+                </div>
                 <button
                   id="form-btn"
                   class="btn--filled btn--large"
@@ -165,5 +172,6 @@
         </div>
       </div>
     </div>
+    <script type="module" src="/script.js"></script>
   </body>
 </html>
