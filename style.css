@@ -73,12 +73,14 @@ h1 {
 }
 
 h2 {
+  color: var(--very-dark-blue);
   font-size: 40px;
   line-height: 48px;
   letter-spacing: -1px;
 }
 
 h3 {
+  color: var(--very-dark-blue);
   font-size: 22px;
   line-height: normal;
   letter-spacing: 0;
@@ -104,12 +106,14 @@ p {
 }
 
 .p-section {
+  color: var(--grayish-violet);
   font-size: 18px;
   line-height: 32px;
   letter-spacing: 0.12px;
 }
 
 .p-media {
+  color: var(--grayish-violet);
   font-size: 15px;
   line-height: 26px;
   letter-spacing: 0;
@@ -300,4 +304,71 @@ input::placeholder {
 .link-span {
   display: flex;
   align-items: center;
+}
+
+#advanced-stats-section {
+  margin: 120px 0;
+}
+
+#advanced-stats-header {
+  text-align: center;
+  width: 540px;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+#advanced-stats-header > p {
+  margin-top: 18px;
+}
+
+#media-group {
+  display: flex;
+  position: relative;
+}
+
+.media-card {
+  position: relative;
+  padding: 44px 32px 41px 32px;
+  background-color: white;
+  width: 350px;
+  height: 267px;
+  border-radius: 5px;
+}
+
+.media-card:nth-child(3) {
+  margin-left: 30px;
+  margin-top: 44px;
+}
+
+.media-card:nth-child(4) {
+  margin-left: 30px;
+  margin-top: 88px;
+}
+
+.media-badge {
+  position: absolute;
+  top: -44px;
+  width: 88px;
+  height: 88px;
+  border-radius: 50%;
+  background-color: var(--dark-violet);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-card > h3 {
+  margin-top: 33px;
+}
+
+.media-card > p {
+  margin-top: 12px;
+}
+
+#media-line {
+  align-self: center;
+  position: absolute;
+  width: 100%;
+  background-color: var(--cyan);
+  height: 8px;
 }
