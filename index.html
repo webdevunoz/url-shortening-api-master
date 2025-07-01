@@ -32,8 +32,9 @@
     </style>
   </head>
   <body>
-    <div id="hero-background">
-      <div id="page-wrapper">
+    <div id="page-wrapper">
+      <div id="hero-background"></div>
+      <div id="content-wrapper">
         <header id="landing-header">
           <nav id="header-nav">
             <img
@@ -44,7 +45,9 @@
             <ul id="nav-pages-list">
               <li><button class="hdr-nav-btn btn--text">Features</button></li>
               <li><button class="hdr-nav-btn btn--text">Pricing</button></li>
-              <li><button class="hdr-nav-btn btn--text">Resources</button></li>
+              <li>
+                <button class="hdr-nav-btn btn--text">Resources</button>
+              </li>
             </ul>
             <ul id="nav-auth-list">
               <li><button class="hdr-nav-btn btn--text">Login</button></li>
@@ -147,6 +150,7 @@
               </div>
             </div>
           </section>
+          <div id="cta-background"></div>
           <section id="cta-section">
             <div id="boost-box">
               <h2>Boost your links today</h2>
@@ -156,32 +160,48 @@
             </div>
           </section>
         </main>
-        <footer id="footer">
-          <img />
-          <nav>
-            <h4>Features</h4>
-            <ul>
-              <li>Link Shortening</li>
-              <li>Branded Links</li>
-              <li>Analytics</li>
-            </ul>
-            <h4>Resources</h4>
-            <ul>
-              <li>Blog</li>
-              <li>Developers</li>
-              <li>Support</li>
-            </ul>
-            <h4>Company</h4>
-            <ul>
-              <li>About</li>
-              <li>Our Team</li>
-              <li>Careers</li>
-              <li>Contact</li>
-            </ul>
-            <ul>
-              <img />
-              <img />
-              <img />
+        <div id="footer-background"></div>
+        <footer id="landing-footer">
+          <nav id="footer-nav">
+            <div id="footer-nav-logo"></div>
+            <div class="nav-group">
+              <h4>Features</h4>
+              <ul>
+                <li>
+                  <button class="ftr-nav-btn btn--text">Link Shortening</button>
+                </li>
+                <li>
+                  <button class="ftr-nav-btn btn--text">Branded Links</button>
+                </li>
+                <li>
+                  <button class="ftr-nav-btn btn--text">Analytics</button>
+                </li>
+              </ul>
+            </div>
+            <div class="nav-group">
+              <h4>Resources</h4>
+              <ul>
+                <li><button class="ftr-nav-btn btn--text">Blog</button></li>
+                <li>
+                  <button class="ftr-nav-btn btn--text">Developers</button>
+                </li>
+                <li><button class="ftr-nav-btn btn--text">Support</button></li>
+              </ul>
+            </div>
+            <div class="nav-group">
+              <h4>Company</h4>
+              <ul>
+                <li><button class="ftr-nav-btn btn--text">About</button></li>
+                <li><button class="ftr-nav-btn btn--text">Our Team</button></li>
+                <li><button class="ftr-nav-btn btn--text">Careers</button></li>
+                <li><button class="ftr-nav-btn btn--text">Contact</button></li>
+              </ul>
+            </div>
+            <ul id="social-links">
+              <a href="#"><div id="facebook-icon" class="icon"></div></a>
+              <a href="#"><div id="twitter-icon" class="icon"></div></a>
+              <a href="#"><div id="pinterest-icon" class="icon"></div></a>
+              <a href="#"><div id="instagram-icon" class="icon"></div></a>
             </ul>
           </nav>
         </footer>
@@ -193,6 +213,7 @@
         </div>
       </div>
     </div>
+
     <script type="module" src="/script.js"></script>
   </body>
 </html>
