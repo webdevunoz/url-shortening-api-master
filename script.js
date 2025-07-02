@@ -48,15 +48,15 @@ form.addEventListener('submit', async (e) => {
     // Listen for click to copy on copy button
     copyBtn.addEventListener('click', () => {
       // If there was a previous button copied, revert its style
-      if (prevBtn) {
+      if (prevBtn && prevBtn !== copyBtn) {
+        prevBtn.classList.remove('btn--copied');
         prevBtn.textContent = "Copy";
-        prevBtn.style.backgroundColor = 'hsl(180, 66%, 49%)';
       }
       // Copy the data, and visually show its been copied
       navigator.clipboard.writeText(data.short_url)
         .then(() => {
+          copyBtn.classList.add('btn--copied');
           copyBtn.textContent = "Copied!";
-          copyBtn.style.backgroundColor = "hsl(257, 27%, 26%)";
           prevBtn = copyBtn;
         })
         .catch(err => console.error('Failed to copy: ' + err));
