@@ -139,6 +139,38 @@ p {
   margin-right: 45.43px;
 }
 
+/* Mobile Menu Button */
+#mobile-menu-btn {
+  display: none;
+  background: none;
+}
+
+.hamburger {
+  cursor: pointer;
+  width: 24px;
+  height: 21px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.hamburger span {
+  display: block;
+  background: var(--grayish-violet);
+  height: 3px;
+  width: 100%;
+  position: relative;
+  transition: all 0.3s;
+}
+
+#nav-menu {
+  display: inherit;
+  width: 100%;
+  align-items: center;
+}
+
 #nav-pages-list {
   display: flex;
   list-style: none;
@@ -515,4 +547,20 @@ p {
 
 #social-links a:active {
   color: var(--cyan);
+}
+
+/* Mobile layout ends here */
+@media (max-width: 767px) {
+  #header-nav {
+    justify-content: space-between;
+    padding-top: 40px;
+  }
+
+  #mobile-menu-btn {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+  }
 }
