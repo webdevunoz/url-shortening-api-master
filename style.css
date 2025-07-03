@@ -246,9 +246,6 @@ p {
   height: 64px;
   border-radius: 10px;
   border: none;
-}
-
-input {
   font-family: inherit;
   padding-left: 32px;
   font-weight: 500;
@@ -257,14 +254,18 @@ input {
   letter-spacing: 0.15px;
 }
 
-input:focus {
+#form-input:focus {
   outline: none;
   border: none;
 }
 
-input::placeholder {
+#form-input::placeholder {
   color: var(--very-dark-blue);
   opacity: 0.5;
+}
+
+#form-input.input-error::placeholder {
+  color: var(--red);
 }
 
 #form-btn {
@@ -283,6 +284,7 @@ input::placeholder {
 }
 
 .error-message {
+  position: absolute;
   color: var(--red);
   font-weight: 500;
   font-style: italic;
