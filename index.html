@@ -32,16 +32,10 @@
     </style>
   </head>
   <body>
-    <div id="page-wrapper">
-      <div id="hero-background"></div>
-      <div id="content-wrapper">
-        <header id="landing-header">
-          <nav id="header-nav">
-            <img
-              id="header-nav-logo"
-              src="/images/logo.svg"
-              alt="Shortly Logo"
-            />
+    <header id="landing-header">
+      <div class="content-wrapper">
+        <nav id="header-nav">
+          <img id="header-nav-logo" src="/images/logo.svg" alt="Shortly Logo" />        
             <ul id="nav-pages-list">
               <li><button class="hdr-nav-btn btn--text">Features</button></li>
               <li><button class="hdr-nav-btn btn--text">Pricing</button></li>
@@ -56,11 +50,14 @@
                   Sign Up
                 </button>
               </li>
-            </ul>
-          </nav>
-        </header>
-        <main>
-          <section id="hero-section">
+            </ul>  
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section id="hero-section">   
+          <div class="content-wrapper">
+            <div id="hero-grid">
             <header id="hero-header">
               <h1>More than just shorter links</h1>
               <p class="p-hero">
@@ -70,150 +67,156 @@
               <button class="cta-button btn--filled btn--large">
                 Get Started
               </button>
-            </header>
+            </header>      
             <img id="hero-image" src="/images/illustration-working.svg" />
-          </section>
-          <section id="shorten-link-section">
-            <div id="form-box">
-              <form id="shorten-link-form" novalidate>
-                <div id="input-wrapper">
-                  <input
-                    type="url"
-                    id="form-input"
-                    placeholder="Shorten a link here..."
-                    required
-                  />
-                </div>
-                <button
-                  id="form-btn"
-                  class="btn--filled btn--large"
-                  type="submit"
-                >
-                  Shorten It!
-                </button>
-              </form>
             </div>
-          </section>
-          <section id="advanced-stats-section">
-            <header id="advanced-stats-header">
-              <h2>Advanced Statistics</h2>
-              <p class="p-section">
-                Track how your links are performing across the web with our
-                advanced statistics dashboard.
-              </p>
-            </header>
-            <div id="media-group">
-              <div id="media-line"></div>
-              <div class="media-card">
-                <span class="media-badge">
-                  <img
-                    class="media-img"
-                    src="/images/icon-brand-recognition.svg"
-                    alt="Brand Recognition Badge"
-                  />
-                </span>
-                <h3>Brand Recognition</h3>
-                <p class="p-media">
-                  Boost your brand recognition with each click. Generic links
-                  don’t mean a thing. Branded links help instil confidence in
-                  your content.
-                </p>
-              </div>
-              <div class="media-card">
-                <span class="media-badge">
-                  <img
-                    class="media-img"
-                    src="/images/icon-detailed-records.svg"
-                    alt="Detailed Records Badge"
-                  />
-                </span>
-                <h3>Detailed Records</h3>
-                <p class="p-media">
-                  Gain insights into who is clicking your links. Knowing when
-                  and where people engage with your content helps inform better
-                  decisions.
-                </p>
-              </div>
-              <div class="media-card">
-                <span class="media-badge">
-                  <img
-                    class="media-img"
-                    src="/images/icon-fully-customizable.svg"
-                    alt="Fully Customizable Badge"
-                  />
-                </span>
-                <h3>Fully Customizable</h3>
-                <p class="p-media">
-                  Improve brand awareness and content discoverability through
-                  customizable links, supercharging audience engagement.
-                </p>
-              </div>
-            </div>
-          </section>
-          <div id="cta-background"></div>
-          <section id="cta-section">
-            <div id="boost-box">
-              <h2>Boost your links today</h2>
-              <button class="cta-button btn--filled btn--large">
-                Get Started
-              </button>
-            </div>
-          </section>
-        </main>
-        <div id="footer-background"></div>
-        <footer id="landing-footer">
-          <nav id="footer-nav">
-            <div id="footer-nav-logo"></div>
-            <div class="nav-group">
-              <h4>Features</h4>
-              <ul>
-                <li>
-                  <button class="ftr-nav-btn btn--text">Link Shortening</button>
-                </li>
-                <li>
-                  <button class="ftr-nav-btn btn--text">Branded Links</button>
-                </li>
-                <li>
-                  <button class="ftr-nav-btn btn--text">Analytics</button>
-                </li>
-              </ul>
-            </div>
-            <div class="nav-group">
-              <h4>Resources</h4>
-              <ul>
-                <li><button class="ftr-nav-btn btn--text">Blog</button></li>
-                <li>
-                  <button class="ftr-nav-btn btn--text">Developers</button>
-                </li>
-                <li><button class="ftr-nav-btn btn--text">Support</button></li>
-              </ul>
-            </div>
-            <div class="nav-group">
-              <h4>Company</h4>
-              <ul>
-                <li><button class="ftr-nav-btn btn--text">About</button></li>
-                <li><button class="ftr-nav-btn btn--text">Our Team</button></li>
-                <li><button class="ftr-nav-btn btn--text">Careers</button></li>
-                <li><button class="ftr-nav-btn btn--text">Contact</button></li>
-              </ul>
-            </div>
-            <ul id="social-links">
-              <a href="#"><div id="facebook-icon" class="icon"></div></a>
-              <a href="#"><div id="twitter-icon" class="icon"></div></a>
-              <a href="#"><div id="pinterest-icon" class="icon"></div></a>
-              <a href="#"><div id="instagram-icon" class="icon"></div></a>
-            </ul>
-          </nav>
-        </footer>
-        <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="#">Your Name Here</a>.
+          </div>  
         </div>
+      </section>
+      <section id="shorten-link-section">
+        <div class="content-wrapper">
+          <div id="form-box">
+            <form id="shorten-link-form" novalidate>
+              <div id="input-wrapper">
+                <input
+                  type="url"
+                  id="form-input"
+                  placeholder="Shorten a link here..."
+                  required
+                />
+              </div>
+              <button
+                id="form-btn"
+                class="btn--filled btn--large"
+                type="submit"
+              >
+                Shorten It!
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="advanced-stats-section">
+        <div class="content-wrapper">
+          <header id="advanced-stats-header">
+            <h2>Advanced Statistics</h2>
+            <p class="p-section">
+              Track how your links are performing across the web with our
+              advanced statistics dashboard.
+            </p>
+          </header>
+          <div id="media-group">
+            <div id="media-line"></div>
+            <div class="media-card">
+              <span class="media-badge">
+                <img
+                  class="media-img"
+                  src="/images/icon-brand-recognition.svg"
+                  alt="Brand Recognition Badge"
+                />
+              </span>
+              <h3>Brand Recognition</h3>
+              <p class="p-media">
+                Boost your brand recognition with each click. Generic links
+                don’t mean a thing. Branded links help instil confidence in your
+                content.
+              </p>
+            </div>
+            <div class="media-card">
+              <span class="media-badge">
+                <img
+                  class="media-img"
+                  src="/images/icon-detailed-records.svg"
+                  alt="Detailed Records Badge"
+                />
+              </span>
+              <h3>Detailed Records</h3>
+              <p class="p-media">
+                Gain insights into who is clicking your links. Knowing when and
+                where people engage with your content helps inform better
+                decisions.
+              </p>
+            </div>
+            <div class="media-card">
+              <span class="media-badge">
+                <img
+                  class="media-img"
+                  src="/images/icon-fully-customizable.svg"
+                  alt="Fully Customizable Badge"
+                />
+              </span>
+              <h3>Fully Customizable</h3>
+              <p class="p-media">
+                Improve brand awareness and content discoverability through
+                customizable links, supercharging audience engagement.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="cta-section"> 
+        <div class="content-wrapper"> 
+          <div id="cta-box">
+          <h2>Boost your links today</h2>
+          <button class="cta-button btn--filled btn--large">
+            Get Started
+          </button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="landing-footer">
+      <div class="content-wrapper">
+        <nav id="footer-nav">
+          <div id="footer-nav-logo"></div>
+          <div class="nav-group">
+            <h4>Features</h4>
+            <ul>
+              <li>
+                <button class="ftr-nav-btn btn--text">Link Shortening</button>
+              </li>
+              <li>
+                <button class="ftr-nav-btn btn--text">Branded Links</button>
+              </li>
+              <li>
+                <button class="ftr-nav-btn btn--text">Analytics</button>
+              </li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <h4>Resources</h4>
+            <ul>
+              <li><button class="ftr-nav-btn btn--text">Blog</button></li>
+              <li>
+                <button class="ftr-nav-btn btn--text">Developers</button>
+              </li>
+              <li><button class="ftr-nav-btn btn--text">Support</button></li>
+            </ul>
+          </div>
+          <div class="nav-group">
+            <h4>Company</h4>
+            <ul>
+              <li><button class="ftr-nav-btn btn--text">About</button></li>
+              <li><button class="ftr-nav-btn btn--text">Our Team</button></li>
+              <li><button class="ftr-nav-btn btn--text">Careers</button></li>
+              <li><button class="ftr-nav-btn btn--text">Contact</button></li>
+            </ul>
+          </div>
+          <ul id="social-links">
+            <a href="#"><div id="facebook-icon" class="icon"></div></a>
+            <a href="#"><div id="twitter-icon" class="icon"></div></a>
+            <a href="#"><div id="pinterest-icon" class="icon"></div></a>
+            <a href="#"><div id="instagram-icon" class="icon"></div></a>
+          </ul>
+        </nav>
       </div>
+    </footer>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
     </div>
-
     <script type="module" src="/script.js"></script>
   </body>
 </html>
