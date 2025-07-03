@@ -22,3 +22,10 @@ mediaQuery.addEventListener('change', () => {
     navMenu.classList.remove('visible');
 });
 
+/* Check for click outside mobile nav menu to remove visible class */
+document.addEventListener('click', (event) => {
+  const outsideNavMenu = !navMenu.contains(event.target) && !menuBtn.contains(event.target);
+  if (navMenu.classList.contains('visible') && outsideNavMenu)
+    navMenu.classList.remove('visible');
+});
+
