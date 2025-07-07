@@ -815,6 +815,20 @@ p {
   .p-media {
     text-align: center;
   }
+
+  #cta-section {
+    padding-block: 90px;
+    background-image: url("/images/bg-boost-mobile.svg");
+    background-position: center;
+  }
+
+  #cta-box {
+    padding: 0;
+  }
+
+  #cta-box > h2 {
+    margin-bottom: 16px;
+  }
 }
 
 @media (max-width: 463px) {
