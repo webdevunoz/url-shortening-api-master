@@ -832,6 +832,26 @@ p {
   #cta-box > h2 {
     margin-bottom: 16px;
   }
+
+  #landing-footer {
+    padding-block: 54px;
+  }
+
+  #footer-nav {
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 40px;
+  }
+
+  #footer-nav-logo {
+    min-height: 33px;
+    justify-self: center;
+    margin-bottom: 9px;
+  }
+
+  #social-links {
+    justify-content: center;
+  }
 }
 
 @media (max-width: 463px) {
