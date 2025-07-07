@@ -3,6 +3,7 @@ const formBox = document.getElementById('form-box');
 const inputWrapper = document.getElementById('input-wrapper');
 const input = document.getElementById('form-input');
 const result = document.getElementById('result');
+const linkResults = document.getElementById('link-results');
 let prevBtn;
 
 /*Note! Could not access Clean URL API, used Spoo.me instead for link shortening*/
@@ -43,7 +44,7 @@ form.addEventListener('submit', async (e) => {
     linkSpan.appendChild(copyBtn);
     newDiv.appendChild(prevURL);
     newDiv.appendChild(linkSpan);
-    formBox.insertAdjacentElement('afterend', newDiv);
+    linkResults.appendChild(newDiv);
 
     // Listen for click to copy on copy button
     copyBtn.addEventListener('click', () => {
