@@ -83,7 +83,6 @@ h2 {
 }
 
 h3 {
-  text-align: center;
   margin-top: 33px;
   color: var(--very-dark-blue);
   font-size: 22px;
@@ -810,6 +809,10 @@ p {
   .media-card:nth-child(4) {
     margin-left: 0;
     margin-top: 44px;
+  }
+
+  h3 {
+    text-align: center;
   }
 
   .p-media {
