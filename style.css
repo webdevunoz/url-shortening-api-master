@@ -359,9 +359,12 @@ p {
 }
 
 #form-btn {
-  padding: 18px 40px 16px 41px;
+  padding: 16px 40px;
   border-radius: 10px;
   white-space: nowrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #form-input.input-error {
@@ -763,5 +766,11 @@ p {
 @media (max-width: 463px) {
   #hero-image {
     max-width: 154%;
+  }
+}
+
+@media (max-width: 375px) {
+  #input-wrapper {
+    min-width: 0;
   }
 }
