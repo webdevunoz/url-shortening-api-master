@@ -233,7 +233,11 @@ p {
 
 .mobile .nav-auth-btn {
   font-size: 18px;
-  padding: 12px 104px 9px 106px;
+  padding-top: 12px;
+  padding-bottom: 9px;
+  max-width: 279px;
+  width: 100%;
+  text-align: center;
 }
 
 .btn--text {
