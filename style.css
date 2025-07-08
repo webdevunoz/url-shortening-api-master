@@ -293,7 +293,7 @@ p {
   display: grid;
   grid-template-columns: 0.625fr 0.5fr;
   align-items: center;
-  gap: clamp(8px, 93vw - 977.8px, 101px);
+  gap: 15px;
 }
 
 #hero-section {
