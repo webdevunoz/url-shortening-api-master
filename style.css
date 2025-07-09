@@ -633,7 +633,7 @@ p {
     grid-template-columns: 0.6fr 0.525fr;
   }
   h1 {
-    width: 104.3%;
+    width: 107%;
   }
 }
 
@@ -674,7 +674,7 @@ p {
 /* Hero Layout Transition */
 @media (max-width: 906px) {
   h1 {
-    width: 115%;
+    width: 118%;
   }
 }
 
