@@ -214,10 +214,6 @@ p {
 
 .hdr-nav-btn {
   color: var(--grayish-violet);
-  font-weight: 700;
-  font-size: 15px;
-  line-height: normal;
-  letter-spacing: 0;
 }
 
 .mobile .hdr-nav-btn {
