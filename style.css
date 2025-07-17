@@ -1,12 +1,12 @@
-/* Browser resets */
+/* Browser Resets */
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+/* Color Palette */
 :root {
-  /* Color Palette */
   /*Primary Colors*/
   --cyan: hsl(180, 66%, 49%);
   --dark-violet: hsl(257, 27%, 26%);
@@ -22,12 +22,14 @@
   --very-dark-violet: hsl(260, 8%, 14%);
 }
 
+/* Base style */
 body {
   font-family: "Poppins", sans-serif;
   background-color: hsl(225, 32%, 95%);
   overflow-x: hidden;
 }
 
+/* Inner Layout content wrapper in header, main sections and footer */
 .content-wrapper {
   width: calc(100% - 48px);
   max-width: 1110px;
@@ -35,34 +37,7 @@ body {
   box-sizing: border-box;
 }
 
-button {
-  font-family: inherit;
-  cursor: pointer;
-  border: none;
-}
-
-.btn--large {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: normal;
-  letter-spacing: 0;
-}
-
-.btn--small {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: normal;
-  letter-spacing: 0;
-}
-
-.ftr-nav-btn {
-  color: var(--gray);
-  font-weight: 500;
-  font-size: 15px;
-  line-height: normal;
-  letter-spacing: -0.23px;
-}
-
+/* Global elements and Typography presets */
 h1,
 h2,
 h3 {
@@ -101,7 +76,21 @@ p {
   font-weight: 500;
 }
 
-.p-hero {
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+}
+
+.ftr-nav-btn {
+  color: var(--gray);
+  font-weight: 500;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: -0.23px;
+}
+
+#p-hero {
   margin-top: 5px;
   margin-bottom: 38px;
   color: var(--grayish-violet);
@@ -125,6 +114,42 @@ p {
   letter-spacing: 0;
 }
 
+/* ------------------ Button Modifier Styles ------------------ */
+
+.btn--large {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.btn--small {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: normal;
+  letter-spacing: 0;
+}
+
+.btn--text {
+  background: none;
+}
+
+.btn--filled {
+  background-color: var(--cyan);
+  color: white;
+}
+
+.btn--filled:not(.btn--copied):active {
+  background-color: var(--light-cyan);
+}
+
+.btn--copied {
+  padding: 10px 21px 7px 21px;
+  background-color: var(--dark-violet);
+}
+
+/* ------------------ Landing Header Styles ------------------ */
+
 #landing-header {
   margin: 0 auto;
   background-color: white;
@@ -141,13 +166,12 @@ p {
   margin-right: 45.43px;
 }
 
-/* Mobile Menu Button */
 #mobile-menu-btn {
   display: none;
   background: none;
 }
 
-.hamburger {
+#hamburger-icon {
   cursor: pointer;
   width: 24px;
   height: 21px;
@@ -158,7 +182,7 @@ p {
   gap: 6px;
 }
 
-.hamburger span {
+#hamburger-icon span {
   display: block;
   background: var(--grayish-violet);
   height: 3px;
@@ -236,19 +260,6 @@ p {
   text-align: center;
 }
 
-.btn--text {
-  background: none;
-}
-
-.btn--filled {
-  background-color: var(--cyan);
-  color: white;
-}
-
-.btn--filled:not(.btn--copied):active {
-  background-color: var(--light-cyan);
-}
-
 .hdr-nav-btn:active {
   color: var(--very-dark-blue);
 }
@@ -285,17 +296,19 @@ p {
   border-radius: 28px;
 }
 
-#hero-wrapper {
-  display: grid;
-  grid-template-columns: 0.625fr 0.5fr;
-  align-items: center;
-  gap: 15px;
-}
+/* ------------------ Hero Section Styles ------------------ */
 
 #hero-section {
   background-color: white;
   padding-top: 78px;
   padding-bottom: 152px;
+}
+
+#hero-wrapper {
+  display: grid;
+  grid-template-columns: 0.625fr 0.5fr;
+  align-items: center;
+  gap: 15px;
 }
 
 #hero-header {
@@ -309,6 +322,8 @@ p {
   overflow: hidden;
   width: 200%;
 }
+
+/* ------------------ Shorten Link Section Styles ------------------ */
 
 #shorten-link-section {
   position: relative;
@@ -423,15 +438,12 @@ p {
   border-radius: 5px;
 }
 
-.btn--copied {
-  padding: 10px 21px 7px 21px;
-  background-color: var(--dark-violet);
-}
-
 .link-span {
   display: flex;
   align-items: center;
 }
+
+/* ------------------ Advanced Stats Section Styles ------------------ */
 
 #advanced-stats-section {
   padding-top: 36px;
@@ -497,6 +509,8 @@ p {
   height: 8px;
 }
 
+/* ------------------ CTA Section Styles ------------------ */
+
 #cta-section {
   display: flex;
   align-items: center;
@@ -517,6 +531,8 @@ p {
 #cta-box {
   padding-inline: 34px;
 }
+
+/* ------------------ Landing Footer Styles ------------------ */
 
 #landing-footer {
   background-color: var(--very-dark-violet);
@@ -610,8 +626,21 @@ p {
   color: var(--cyan);
 }
 
+/* ------------------ Attribution Styles ------------------ */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  background-color: var(--very-dark-violet);
+  color: white;
+}
+
+.attribution a {
+  color: var(--cyan);
+}
+
 /* ---------------------Media Queries--------------------- */
-/* Desktop(first): 1440px(and up) - 1024px */
+/* This CSS file is based on desktop first design(1440px - 1024px)*/
 
 /* Hero Layout Transition */
 @media (max-width: 1228px) {
